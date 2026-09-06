@@ -1,0 +1,216 @@
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 14;
+  font-family: 'Montserrat', sans-serif, system-ui;
+  background: 3c3c3c;
+}
+
+/* Control the left side */
+.left {
+  position: absolute;
+  left: 0;
+  width: 60vw;
+  top: 3rem;
+  bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem;
+  align-items: center;
+  line-height: 2;
+}
+
+/* Control the right side */
+.right {
+  position: absolute;
+  right: 0;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 2;
+}
+
+.lite-bot {
+  font-weight: 600;
+  display: flex;
+}
+
+.lite-bot div {
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 3rem;
+  border-radius: 3rem;
+}
+
+.lite-bot span {
+  font-family: cursive;
+  font-style: italic;
+  font-size: 1.5rem;
+  color: rgb(62, 180, 137);
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 30%;
+  border: none;
+  width: 150px;
+  height: 50px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.search-input {
+  resize: none;
+  flex: 1;
+  background: transparent;
+  outline: none;
+  height: 20rem;
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+.searchBar-container {
+  align-self: flex-end;
+  width: 90%;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.searchBar button {
+  background-color: rgb(62, 180, 137);
+  color: white;
+  height: 2.5em;
+  padding: 0 2em;
+}
+
+.searchBar button:active {
+  background-color: rgb(152, 255, 152);
+  color: white;
+  height: 2.5em;
+  padding: 0 2em;
+}
+
+.searchBar button:disabled {
+  background-color: rgb(152, 255, 152);
+}
+
+.clear-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+}
+
+.chat-container {
+  width: 50vw;
+  height: 50vh;
+}
+
+.chatConversations {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 2rem;
+  padding: 20px;
+}
+
+.chat-prompt {
+  width: 50%;
+  align-self: flex-end;
+  margin: 2rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  background-color: #161616;
+  padding: 2rem;
+}
+
+.chat-response {
+  width: 50%;
+  margin: 2rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  background-color: #161616;
+  padding: 2rem;
+  float: left;
+}
+
+.chat-container button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(205, 56, 56);
+  color: white;
+}
+
+.chat-container button:active {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(207, 119, 119);
+  color: white;
+}
+
+.animation-container {
+  align-self: center;
+  width: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.animation-container span {
+  font-family: serif;
+  font-style: bold;
+  font-size: 1.5rem;
+  padding: 0.5em 1.5em;
+  margin: 2rem 0;
+  /* Rainbow Gradient */
+  background: linear-gradient(
+    270deg,
+    #ff0000,
+    #ff9900,
+    #ffff00,
+    #33cc33,
+    #0066ff,
+    #6600cc,
+    #ff3399,
+    #ff0000
+  );
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: rainbowMove 5s linear infinite;
+}
+
+@keyframes rainbowMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
